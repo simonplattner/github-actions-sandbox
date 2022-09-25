@@ -16,6 +16,8 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v3.15.0
       - name: create release
         uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.CHANGELOG_RELEASE }}
         with:
           tag_name: ${{ steps.changelog.outpus.tag }}
           release_name: ${{ steps.changelog.outpus.tag }}
