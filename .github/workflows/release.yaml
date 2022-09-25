@@ -16,3 +16,5 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v3.15.0
       - name: Create GitHub release
         uses: softprops/action-gh-release@v0.1.14
+        with:
+          tag_name: ${{ steps.changelog.outputs.tag }}
