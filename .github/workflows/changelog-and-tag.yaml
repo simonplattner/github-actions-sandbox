@@ -14,3 +14,9 @@ jobs:
       - uses: actions/checkout@v3
       - name: Conventional Changelog Action
         uses: TriPSs/conventional-changelog-action@v3.15.0
+      - name: create release
+        uses: actions/create-release@v1
+        with:
+          tag_name: ${{ steps.changelog.outpus.tag }}
+          release_name: ${{ steps.changelog.outpus.tag }}
+          body: ${{ steps.changelog.outpus.clean_changelog }}
