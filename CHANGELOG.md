@@ -1,3 +1,12 @@
+# [0.4.0](https://github.com/simonplattner/github-actions-sandbox/compare/v0.3.0...v0.4.0) (2022-09-25)
+
+
+### Features
+
+* add create release step to pipeline ([1c14d27](https://github.com/simonplattner/github-actions-sandbox/commit/1c14d270d0371931ff6f09dc18fdb0aba83fdcb6))
+
+
+
 # [0.3.0](https://github.com/simonplattner/github-actions-sandbox/compare/v0.2.1...v0.3.0) (2022-09-25)
 
 
