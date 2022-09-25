@@ -1,3 +1,12 @@
+## [0.7.7](https://github.com/simonplattner/github-actions-sandbox/compare/v0.7.6...v0.7.7) (2022-09-25)
+
+
+### Bug Fixes
+
+* some more ci ([851722e](https://github.com/simonplattner/github-actions-sandbox/commit/851722ea57545366ab2a68c9264e1e5a7ea700fd))
+
+
+
 ## [0.7.6](https://github.com/simonplattner/github-actions-sandbox/compare/v0.7.5...v0.7.6) (2022-09-25)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * some more ci ([b14053d](https://github.com/simonplattner/github-actions-sandbox/commit/b14053d6ceafd16046cb9a72d55c5bd2b6d1178b))
-
-
-
-## [0.7.2](https://github.com/simonplattner/github-actions-sandbox/compare/v0.7.1...v0.7.2) (2022-09-25)
-
-
-### Bug Fixes
-
-* some more ci ([1ae394f](https://github.com/simonplattner/github-actions-sandbox/commit/1ae394f579d9189e2d3960d5f79178684934f0bd))
 
 
 
