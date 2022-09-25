@@ -1,3 +1,12 @@
+# [0.6.0](https://github.com/simonplattner/github-actions-sandbox/compare/v0.5.0...v0.6.0) (2022-09-25)
+
+
+### Features
+
+* better ci ([9831378](https://github.com/simonplattner/github-actions-sandbox/commit/9831378b7cfa8b3a25b6933126df474c8b8ba1b9))
+
+
+
 # [0.5.0](https://github.com/simonplattner/github-actions-sandbox/compare/v0.4.2...v0.5.0) (2022-09-25)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add create release step to pipeline ([1c14d27](https://github.com/simonplattner/github-actions-sandbox/commit/1c14d270d0371931ff6f09dc18fdb0aba83fdcb6))
-
-
-
-# [0.3.0](https://github.com/simonplattner/github-actions-sandbox/compare/v0.2.1...v0.3.0) (2022-09-25)
-
-
-### Features
-
-* add create release step to pipeline ([fd875f3](https://github.com/simonplattner/github-actions-sandbox/commit/fd875f3459d672d92546e89abfa66593e23d587e))
 
 
 
