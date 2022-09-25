@@ -16,7 +16,9 @@ jobs:
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3.15.0
       - name: create release
-        uses: actions/create-release@v1
+#        uses: actions/create-release@v1
+        uses: softprops/action-gh-release@v0.1.14
+        if: ${{ steps.changelog.outputs.skipped == 'false' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
