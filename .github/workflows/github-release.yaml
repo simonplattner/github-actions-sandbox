@@ -8,7 +8,8 @@ jobs:
   changelog:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Create GitHub release
         uses: softprops/action-gh-release@v0.1.14
         with:
-          body_path: ${{ github.workspace }}/CHANGELOG.md
+          body_path: CHANGELOG.md
