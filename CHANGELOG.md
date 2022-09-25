@@ -1,3 +1,12 @@
+## [0.4.1](https://github.com/simonplattner/github-actions-sandbox/compare/v0.4.0...v0.4.1) (2022-09-25)
+
+
+### Bug Fixes
+
+* create release ([326ba45](https://github.com/simonplattner/github-actions-sandbox/commit/326ba451d672cb2ae58bc533054a66dd9a89d91c))
+
+
+
 # [0.4.0](https://github.com/simonplattner/github-actions-sandbox/compare/v0.3.0...v0.4.0) (2022-09-25)
 
 
