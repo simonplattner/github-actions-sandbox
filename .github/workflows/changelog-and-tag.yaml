@@ -1,4 +1,4 @@
-name: Update CHANGELOG.md
+name: Update CHANGELOG.md and create git tag
 
 on:
   push:
