@@ -11,4 +11,4 @@ jobs:
       - name: Create GitHub release
         uses: softprops/action-gh-release@v0.1.14
         with:
-          files: CHANGELOG.md
+          body_path: CHANGELOG.md
