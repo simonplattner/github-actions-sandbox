@@ -75,7 +75,6 @@ jobs:
 #            --docker-custom-image-name {{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
 #            --docker-custom-image-name {{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
 
-
 #  az webapp config container set \
 #  --name planable-staging --resource-group sandbox \
 #  --docker-custom-image-name ghcr.io/simonplattner/github-actions-sandbox:latest
