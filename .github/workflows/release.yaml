@@ -39,10 +39,6 @@ jobs:
       - name: Generate changelog and git tag
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3.15.0
-        with:
-          tag-prefix: ''
-          skip-version-file: true
-          output-file: 'false'
 
       - name: Build
         run: ./gradlew -Pversion=${{ steps.changelog.outputs.tag }} build
@@ -59,15 +55,11 @@ jobs:
       - name: Push named docker image
         run: docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.changelog.outputs.tag }}
 
-      - name: Get current date
-        id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
-
       - name: Create GitHub release
         uses: softprops/action-gh-release@v0.1.14
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
         with:
-          name: ${{ steps.changelog.outputs.tag }} / ${{ steps.date.outputs.date }}
+          name: ${{ steps.changelog.outputs.tag }}
           tag_name: ${{ steps.changelog.outputs.tag }}
           body: ${{ steps.changelog.outputs.clean_changelog }}
 
