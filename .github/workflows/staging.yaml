@@ -1,4 +1,4 @@
-name: Build, test, containerize and deploy to staging
+name: Staging
 
 on:
   push:
@@ -15,6 +15,7 @@ jobs:
     permissions:
       contents: read
       packages: write
+      pull-requests: write
 
     steps:
       - name: Checkout repository
