@@ -41,6 +41,7 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v3.15.0
         with:
           tag-prefix: ''
+          skip-version-file: 'true'
 
       - name: Build
         run: ./gradlew -Pversion=${{ steps.changelog.outputs.tag }} build
