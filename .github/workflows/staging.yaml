@@ -7,11 +7,11 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
-  AZURE_WEBAPP_NAME: planable-staging
 
 jobs:
-  build-and-push-image:
+  staging:
     runs-on: ubuntu-latest
+    environment: staging
     permissions:
       contents: read
       packages: write
@@ -51,14 +51,17 @@ jobs:
       - name: Push named docker image
         run: docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
 
-  deploy-to-staging:
-    runs-on: ubuntu-latest
-    needs: build-and-push-image
-    environment: staging
-    steps:
       - name: Update target image on staging
         uses: Azure/webapps-deploy@v2
         with:
           app-name: '${{ env.AZURE_WEBAPP_NAME }}'
           publish-profile: '${{ secrets.AZURE_WEB_APP_PUBLISH_PROFILE }}'
           images: '${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}'
+
+      - name: Create pull request for production
+        uses: repo-sync/pull-request@v2.6.2
+        with:
+          destination_branch: "production"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          pr_title: "Create release from ${{ github.sha }}"
+          pr_reviewer: "simonplattner"

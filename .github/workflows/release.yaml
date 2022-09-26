@@ -9,7 +9,7 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
-  generate-changelog-and-tag:
+  release:
     runs-on: ubuntu-latest
     environment: staging
     permissions:
