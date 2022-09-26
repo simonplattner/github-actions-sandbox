@@ -1,4 +1,4 @@
-name: Build, test, tag, containerize, create release and deploy to production
+name: Build, test, containerize, create release and deploy to production
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: staging
     permissions:
-      contents: read
+      contents: write
       packages: write
 
     steps:
@@ -41,7 +41,7 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v3.15.0
         with:
           tag-prefix: ''
-          skip-version-file: 'true'
+          skip-version-file: true
           output-file: 'false'
 
       - name: Build
