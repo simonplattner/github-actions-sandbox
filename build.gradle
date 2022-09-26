@@ -6,7 +6,6 @@ plugins {
 }
 
 group = 'com.example'
-version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
 repositories {
@@ -22,6 +21,10 @@ tasks.named('test') {
   useJUnitPlatform()
 }
 
+springBoot {
+  buildInfo()
+}
+
 jib {
   from {
     image = "eclipse-temurin:17-jre-alpine"
@@ -33,4 +36,3 @@ jib {
     creationTime = "USE_CURRENT_TIMESTAMP"
   }
 }
-
