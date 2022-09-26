@@ -1,4 +1,4 @@
-name: Build, test, containerize, create release and deploy to production
+name: Update CHANGELOG.md and create git tag
 
 on:
   push:
