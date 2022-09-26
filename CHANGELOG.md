@@ -1,3 +1,12 @@
+## [0.9.1](https://github.com/simonplattner/github-actions-sandbox/compare/v0.9.0...0.9.1) (2022-09-26)
+
+
+### Bug Fixes
+
+* **ci:** remove tag prefix ([f9341b7](https://github.com/simonplattner/github-actions-sandbox/commit/f9341b7a2d88e03b2ccc86d3e72bfb99473d8834))
+
+
+
 # [0.9.0](https://github.com/simonplattner/github-actions-sandbox/compare/v0.8.2...v0.9.0) (2022-09-26)
 
 
@@ -37,17 +46,6 @@
 ### Features
 
 * **Hello World:** better text ([6fdff4c](https://github.com/simonplattner/github-actions-sandbox/commit/6fdff4c04ce0e441dad867acb7a4059f891a0c27))
-
-
-
-## [0.7.8](https://github.com/simonplattner/github-actions-sandbox/compare/v0.7.7...v0.7.8) (2022-09-25)
-
-
-### Bug Fixes
-
-* some more ci ([78ef737](https://github.com/simonplattner/github-actions-sandbox/commit/78ef737f75e05060592720991588260ad202dc91))
-* some more ci ([ef84fdb](https://github.com/simonplattner/github-actions-sandbox/commit/ef84fdb339edae955a5fe88dc93b256787fd3112))
-* some more ci ([03cf6e7](https://github.com/simonplattner/github-actions-sandbox/commit/03cf6e743dee10bf906698c66b91778b370b1a4c))
 
 
 
