@@ -1,3 +1,13 @@
+## [0.9.5](https://github.com/simonplattner/github-actions-sandbox/compare/0.9.4...0.9.5) (2022-09-26)
+
+
+### Bug Fixes
+
+* **ci:** open PR after staging ([5ae680f](https://github.com/simonplattner/github-actions-sandbox/commit/5ae680f0dabe28311f75a1bc25387cc719d8d9b6))
+* **ci:** open PR after staging ([559ac7c](https://github.com/simonplattner/github-actions-sandbox/commit/559ac7cab928cb8c1ddd8a6cbaf945996951f468))
+
+
+
 ## [0.9.4](https://github.com/simonplattner/github-actions-sandbox/compare/0.9.3...0.9.4) (2022-09-26)
 
 
@@ -32,21 +42,6 @@
 ### Bug Fixes
 
 * **ci:** remove tag prefix ([f9341b7](https://github.com/simonplattner/github-actions-sandbox/commit/f9341b7a2d88e03b2ccc86d3e72bfb99473d8834))
-
-
-
-# [0.9.0](https://github.com/simonplattner/github-actions-sandbox/compare/v0.8.2...v0.9.0) (2022-09-26)
-
-
-### Features
-
-* **ci:** display version in webapp ([49d42f1](https://github.com/simonplattner/github-actions-sandbox/commit/49d42f1235bcfb2e97f82d5921be5fa6a611a05e))
-
-
-### Reverts
-
-* Revert "fix(ci): release (deploy to staging for now)" ([b2a6d8a](https://github.com/simonplattner/github-actions-sandbox/commit/b2a6d8ad7b7b893a29ebe81e8f095318d601a483))
-* Revert "fix(ci): release (deploy to staging for now)" ([2ade7ac](https://github.com/simonplattner/github-actions-sandbox/commit/2ade7acdf102513796b06d06c53fad800281b816))
 
 
 
