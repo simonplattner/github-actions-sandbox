@@ -42,13 +42,13 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v3.15.0
 
       - name: Build
-        run: ./gradlew -Pversion = ${{ steps.changelog.outputs.tag }} build
+        run: ./gradlew -Pversion=${{ steps.changelog.outputs.tag }} build
 
       - name: Test
-        run: ./gradlew -Pversion = ${{ steps.changelog.outputs.tag }} test
+        run: ./gradlew -Pversion=${{ steps.changelog.outputs.tag }} test
 
       - name: Create docker image
-        run: ./gradlew -Pversion = ${{ steps.changelog.outputs.tag }} jibDockerBuild
+        run: ./gradlew -Pversion=${{ steps.changelog.outputs.tag }} jibDockerBuild
 
       - name: Tag docker image
         run: docker image tag ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.changelog.outputs.tag }}
