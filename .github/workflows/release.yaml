@@ -41,13 +41,6 @@ jobs:
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3.15.0
 
-
-
-      - name: echo tag
-        run: echo ${{ steps.changelog.outputs.tag }}
-
-
-
       - name: Build
         run: ./gradlew -Pversion=${{ steps.changelog.outputs.tag }} build
 
