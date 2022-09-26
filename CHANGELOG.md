@@ -1,3 +1,12 @@
+# [0.8.0](https://github.com/simonplattner/github-actions-sandbox/compare/v0.7.8...v0.8.0) (2022-09-26)
+
+
+### Features
+
+* **Hello World:** better text ([6fdff4c](https://github.com/simonplattner/github-actions-sandbox/commit/6fdff4c04ce0e441dad867acb7a4059f891a0c27))
+
+
+
 ## [0.7.8](https://github.com/simonplattner/github-actions-sandbox/compare/v0.7.7...v0.7.8) (2022-09-25)
 
 
@@ -33,15 +42,6 @@
 ### Bug Fixes
 
 * some more ci ([f1dfc70](https://github.com/simonplattner/github-actions-sandbox/commit/f1dfc70a6ec564e361df59c2464725a11f65ad3a))
-
-
-
-## [0.7.4](https://github.com/simonplattner/github-actions-sandbox/compare/v0.7.3...v0.7.4) (2022-09-25)
-
-
-### Bug Fixes
-
-* some more ci ([5d4eeb8](https://github.com/simonplattner/github-actions-sandbox/commit/5d4eeb87a019094a3faa57f70971ba1cb08f6667))
 
 
 
