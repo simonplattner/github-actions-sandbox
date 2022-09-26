@@ -1,4 +1,4 @@
-name: Build, test, containerize and deploy to staging
+name: Staging
 
 on:
   push:

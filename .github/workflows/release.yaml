@@ -1,4 +1,4 @@
-name: Build, test, tag, containerize, create release and deploy to production
+name: Release
 
 on:
   push:
