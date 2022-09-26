@@ -1,3 +1,12 @@
+## [0.9.4](https://github.com/simonplattner/github-actions-sandbox/compare/0.9.3...0.9.4) (2022-09-26)
+
+
+### Bug Fixes
+
+* **ci:** some more ci ([abd2b75](https://github.com/simonplattner/github-actions-sandbox/commit/abd2b751d2d4244d65fb258db6b6388bf7921743))
+
+
+
 ## [0.9.3](https://github.com/simonplattner/github-actions-sandbox/compare/0.9.2...0.9.3) (2022-09-26)
 
 
@@ -38,15 +47,6 @@
 
 * Revert "fix(ci): release (deploy to staging for now)" ([b2a6d8a](https://github.com/simonplattner/github-actions-sandbox/commit/b2a6d8ad7b7b893a29ebe81e8f095318d601a483))
 * Revert "fix(ci): release (deploy to staging for now)" ([2ade7ac](https://github.com/simonplattner/github-actions-sandbox/commit/2ade7acdf102513796b06d06c53fad800281b816))
-
-
-
-## [0.8.2](https://github.com/simonplattner/github-actions-sandbox/compare/v0.8.1...v0.8.2) (2022-09-26)
-
-
-### Bug Fixes
-
-* **ci:** release (deploy to staging for now) ([81e1c9f](https://github.com/simonplattner/github-actions-sandbox/commit/81e1c9f62311fc8e546c180522a22832506d62b4))
 
 
 
