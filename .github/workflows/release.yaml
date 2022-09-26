@@ -42,6 +42,7 @@ jobs:
         with:
           tag-prefix: ''
           skip-version-file: 'true'
+          output-file: 'false'
 
       - name: Build
         run: ./gradlew -Pversion=${{ steps.changelog.outputs.tag }} build
