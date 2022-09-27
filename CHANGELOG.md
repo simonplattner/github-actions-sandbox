@@ -1,3 +1,13 @@
+## [0.9.6](https://github.com/simonplattner/github-actions-sandbox/compare/0.9.5...0.9.6) (2022-09-27)
+
+
+### Bug Fixes
+
+* **ci:** inject git commit hash as version to non release builds ([6184645](https://github.com/simonplattner/github-actions-sandbox/commit/61846450f2debf7fcbc3dfce4c9120b4cac2689b))
+* **ci:** release pipeline deploys to production ([0781890](https://github.com/simonplattner/github-actions-sandbox/commit/07818906aa0db368868cfef188b173c379349364))
+
+
+
 ## [0.9.5](https://github.com/simonplattner/github-actions-sandbox/compare/0.9.4...0.9.5) (2022-09-26)
 
 
@@ -33,15 +43,6 @@
 ### Bug Fixes
 
 * **ci:** skip version file ([62ff96d](https://github.com/simonplattner/github-actions-sandbox/commit/62ff96d0fd1215852a47bace58e7af872b37848b))
-
-
-
-## [0.9.1](https://github.com/simonplattner/github-actions-sandbox/compare/v0.9.0...0.9.1) (2022-09-26)
-
-
-### Bug Fixes
-
-* **ci:** remove tag prefix ([f9341b7](https://github.com/simonplattner/github-actions-sandbox/commit/f9341b7a2d88e03b2ccc86d3e72bfb99473d8834))
 
 
 
