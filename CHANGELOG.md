@@ -1,3 +1,12 @@
+## [0.9.7](https://github.com/simonplattner/github-actions-sandbox/compare/0.9.6...0.9.7) (2022-09-27)
+
+
+### Bug Fixes
+
+* **ci:** tests with protected tag ([53bfa17](https://github.com/simonplattner/github-actions-sandbox/commit/53bfa17653f7060656a0625e6d5739d6307a45e3))
+
+
+
 ## [0.9.6](https://github.com/simonplattner/github-actions-sandbox/compare/0.9.5...0.9.6) (2022-09-27)
 
 
@@ -34,15 +43,6 @@
 
 * **ci:** skip version file ([6a0fc92](https://github.com/simonplattner/github-actions-sandbox/commit/6a0fc92d2525ac60e7b0597b7d8add174b1a261b))
 * **ci:** skip version file ([fe7cc52](https://github.com/simonplattner/github-actions-sandbox/commit/fe7cc524d8f6a3fd535ba3e69cdeff93ab431330))
-
-
-
-## [0.9.2](https://github.com/simonplattner/github-actions-sandbox/compare/0.9.1...0.9.2) (2022-09-26)
-
-
-### Bug Fixes
-
-* **ci:** skip version file ([62ff96d](https://github.com/simonplattner/github-actions-sandbox/commit/62ff96d0fd1215852a47bace58e7af872b37848b))
 
 
 
