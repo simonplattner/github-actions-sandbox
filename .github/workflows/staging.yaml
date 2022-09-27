@@ -38,13 +38,13 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build
-        run: ./gradlew build
+        run: ./gradlew -Pversion=${{ github.sha }} build
 
       - name: Test
-        run: ./gradlew test
+        run: ./gradlew -Pversion=${{ github.sha }} test
 
       - name: Create docker image
-        run: ./gradlew jibDockerBuild
+        run: ./gradlew -Pversion=${{ github.sha }} jibDockerBuild
 
       - name: Tag docker image
         run: docker image tag ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
