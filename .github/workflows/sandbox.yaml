@@ -1,0 +1,25 @@
+name: Build and test
+
+on:
+  push:
+    branches: [ "develop" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Guess next tag
+        id: changelog
+        uses: TriPSs/conventional-changelog-action@v3.15.0
+        with:
+          tag-prefix: ''
+          skip-version-file: 'true'
+          skip-commit: 'true'
+
+      - name: Echo version
+        run: echo ${{ steps.changelog.outputs.tag }}
