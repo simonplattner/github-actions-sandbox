@@ -62,13 +62,13 @@ jobs:
         id: date
         run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
 
-      - name: Create GitHub release
-        uses: softprops/action-gh-release@v0.1.14
-        if: ${{ steps.changelog.outputs.skipped == 'false' }}
-        with:
-          name: ${{ steps.changelog.outputs.tag }} / ${{ steps.date.outputs.date }}
-          tag_name: ${{ steps.changelog.outputs.tag }}
-          body: ${{ steps.changelog.outputs.clean_changelog }}
+#      - name: Create GitHub release
+#        uses: softprops/action-gh-release@v0.1.14
+#        if: ${{ steps.changelog.outputs.skipped == 'false' }}
+#        with:
+#          name: ${{ steps.changelog.outputs.tag }} / ${{ steps.date.outputs.date }}
+#          tag_name: ${{ steps.changelog.outputs.tag }}
+#          body: ${{ steps.changelog.outputs.clean_changelog }}
 
       - name: Update target image on production
         uses: Azure/webapps-deploy@v2
